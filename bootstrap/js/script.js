@@ -11,15 +11,15 @@ $(function () {
 		interval: 3000,
 	});
 	// 首页内容响应式,控制文本垂直居中
-	// $(window).load(function() {
+	$(window).load(function() {
 		$('.content-text').eq(0).css('margin-top', ($('.content-img').eq(0).height() - $('.content-text').eq(0).height()) / 2 + 'px');	
-	// });
+	});
 	$(window).resize(function() {
 		$('.content-text').eq(0).css('margin-top', ($('.content-img').eq(0).height() - $('.content-text').eq(0).height()) / 2 + 'px');
 	});
-	// $(window).load(function() {
+	$(window).load(function() {
 		$('.content-text').eq(1).css('margin-top', ($('.content-img').eq(1).height() - $('.content-text').eq(1).height()) / 2 + 'px');
-	// });
+	});
 	$(window).resize(function() {
 		$('.content-text').eq(1).css('margin-top', ($('.content-img').eq(1).height() - $('.content-text').eq(1).height()) / 2 + 'px');
 	});
