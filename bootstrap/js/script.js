@@ -1,6 +1,8 @@
 $(function () {
 	// 响应式轮播器
-	$('#myCarousel .carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
+	$(window).load(function() {
+		$('#myCarousel .carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
+	});
 	$(window).resize(function() {
 		var $height = $('.carousel-inner img').eq(0).height() ||
 					  $('.carousel-inner img').eq(1).height() ||
